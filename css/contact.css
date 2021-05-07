@@ -1,0 +1,53 @@
+.contact{
+  margin: 10px;
+}
+.contact tr{
+  /*11.テーブルの行の高さは7remを指定すること*/
+  height: 7rem;
+}
+.contact th{
+  /*12.<th>の幅に150pxを指定すること*/
+  /*<th>の幅に150pxを指定すること*/
+  width: 150px;
+  margin: 10px;
+  text-align: right;
+  /*ラベルと入力フォームの間に10pxの余白を入れること*/
+  padding-right: 10px;
+}
+.contact td{
+  /*入力フォームの幅に480pxを指定すること*/
+  width: 480px;
+}
+.text {
+  /*入力フォームの幅に480pxを指定すること*/
+  width: 480px;
+}
+.inquiry {
+  /*入力フォームの幅に480pxを指定すること*/
+  width: 480px;
+  height: 4rem;
+}
+textarea {
+  display: block;
+  width: 480px;
+}
+
+.content p{
+  text-align: center;
+}
+.button{
+  width: 100px;
+  height: 5rem;
+  /*送信ボタンの文字色は白を指定し、サイズを3remにすること*/
+  font-size: 3rem;
+  color: #fff;
+  /*送信ボタンの背景色に#008B8Bを指定し、上下左右に10pxの余白を入れること*/
+  background-color: #008B8B;
+
+  padding: 10px;
+  border-style: none;
+}
+/*下の画像のように、送信ボタンにマウスオーバーした際、ボタンを半透明にすること*/
+.button:hover {
+  opacity: 0.7;
+}

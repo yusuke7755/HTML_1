@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- 2 normalize.cssが適用されていること -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <title>株式会社DIVE</title>
+</head>
+<!-- 9.「会社概要」と同じレイアウトにすること -->
+<body>
+  <div class="container">
+    <header class="header clearfix">
+      <a href="index.html">
+        <img src="./images/logo.png" class="logo_image">
+      </a>
+      <nav>
+        <ul class="top_menu clearfix">
+          <!-- 3 ヘッダーには各ページへのリンクを表示させること -->
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="business.html">事業内容</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <img src="./images/contact.png" class="image_area">
+    <div class="wrapper clearfix">
+      <aside class="side_menu">
+        <nav>
+          <ul>
+            <li><a href="business.html">事業内容</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li class="point"><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <article class="content">
+        <!--4 問い合わせフォームは、<form>と<table>を組み合わせて表示させること -->
+        <form method="post">
+          <table class="contact">
+            <!--5. ラベルには<th>を使用し、入力フォームには<td>を使用すること  -->
+            <tr>
+              <th>お名前</th>
+              <td><input type="text" class="text"></td>
+            </tr>
+            <tr>
+              <th>メールアドレス</th>
+              <td><input type="text" class="text"></td>
+            </tr>
+            <tr>
+
+              <th>性別</th>
+              <td>
+                <!-- 6. 性別の選択がラジオボタンで実装されていること -->
+                <!--7. ラジオボタンの右横にそれぞれ「男・女」が表示されていること-->
+                <input type="radio" name="sex" value="male">男
+                <input type="radio" name="sex" value="female">女
+              </td>
+            </tr>
+            <tr>
+                <!-- お問い合わせ内容の入力フォームには、<input>を使用しないこと-->
+                <th>お問合わせ内容</th>
+                <td><textarea  type="text" class="inquiry"></textarea></td>
+            </tr>
+          </table>
+          <p>
+            <input type="submit" value="送信" class="button">
+          </p>
+        </form>
+      </article>
+    </div>
+    <footer class="footer">
+      <p>Copyright © 2018 DIVE INC All RIGHTS RESERVED.</p>
+    </footer>
+  </div>
+</body>
+</html>

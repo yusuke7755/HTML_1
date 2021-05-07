@@ -1,0 +1,34 @@
+/* 追記 */
+.company{
+  border-collapse: collapse;
+}
+/* 追記 */
+.company tr{
+  height: 5rem;
+}
+.company th{
+  width: 100px;
+  background-color: #B1B1B1;
+  color: #fff;
+}
+.company td{
+  width: 560px;
+  padding-left: 1rem;
+}
+.company th{
+  width: 100px;
+  background-color: #B1B1B1;
+  color: #fff;
+  /* 追記 */
+  border-bottom: solid 1px #fff;
+}
+/* 追記 */
+.company td{
+  width: 560px;
+  padding-left: 1rem;
+  border: solid 1px #B1B1B1;
+}
+/* companyクラスの子要素であるtr要素の最後の要素のth要素を指定 */
+.company tr:last-child th {
+  border-color: #B1B1B1;
+}
